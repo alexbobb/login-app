@@ -1,1 +1,33 @@
-start here
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- Finder view -->
+        <div id="profile-finder-container">
+            Github profile finder
+            <img id="github-logo" src="https://curity.io/images/resources/code-examples/code-examples-github.jpg" alt="github logo">
+             <input type="search" placeholder="User Name" id="username-input">
+             <button id="get-profile">See Github Profile</button>
+             <p id="error-message"></p>
+        </div>
+              
+        
+        <!-- Profile view -->
+        <div id="profile-result-container" class="hidden">
+            <img id="profile-avatar" src="" alt="logged in avatar">
+            <p id="profile-username"></p>
+            <p id="profile-id"></p>
+            <p id="profile-repos"></p>
+
+            <button id="get-new-profile">Find a different Github Profile</button>
+        </div>
+        <script src="./index.js" charset="utf-8"></script>
+    </body>
+</html>
